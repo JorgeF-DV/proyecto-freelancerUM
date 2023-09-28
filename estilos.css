@@ -20,8 +20,55 @@ body {
     text-align: center;
     font-size: 3.8rem;
     color: var(--primario);
+    font-weight: bold;
 }
 
 span {
     font-size: 2rem;
 }
+
+
+
+/* Navegación */
+
+.nav-background{
+
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+.navegacion-principal a{
+   
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 2rem;
+    display: block;
+    text-align: center;
+    
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro)
+
+}
+
